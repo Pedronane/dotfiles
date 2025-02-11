@@ -17,3 +17,6 @@ And to apply the dotfiles
 cd dotfiles
 stow .
 ```
+
+# Most of the config is copied from elifouts dotfiles
+https://github.com/elifouts/Dotfiles
