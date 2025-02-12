@@ -16,11 +16,6 @@ yay -S pipewire pipewire-pulse pipewire-alsa pipewire-jack pavucontrol pulsemixe
 systemctl --user enable pipewire.service pipewire-pulse.service
 systemctl --user start pipewire.service pipewire-pulse.service
 
-# Hyprland Plugin
-hyprpm update
-hyprpm add https://github.com/virtcode/hypr-dynamic-cursors
-hyprpm enable dynamic-cursors
-
 #Copy dotfiles
 git clone https://github.com/Pedronane/dotfiles
 cd dotfiles

@@ -266,7 +266,7 @@ include current-theme.conf
 #: so if you want to override it, place your value after the lines
 #: where the theme file is included.
 
-# cursor_shape block
+cursor_shape block
 
 #: The cursor shape can be one of block, beam, underline. Note that
 #: when reloading the config this will be changed only if the cursor
@@ -291,7 +291,7 @@ include current-theme.conf
 
 #: The thickness of the underline cursor (in pts).
 
-# cursor_blink_interval -1
+cursor_blink_interval 0
 
 #: The interval to blink the cursor (in seconds). Set to zero to
 #: disable blinking. Negative values mean use system default. Note
@@ -312,7 +312,7 @@ include current-theme.conf
 #: Stop blinking cursor after the specified number of seconds of
 #: keyboard inactivity. Set to zero to never stop blinking.
 
-# cursor_trail 0
+cursor_trail 2
 
 #: Set this to a value larger than zero to enable a "cursor trail"
 #: animation. This is an animation that shows a "trail" following the
@@ -1032,7 +1032,7 @@ i#: Performance tuning {{{
 #: insensitive, from the set 0-9A-Z\-=[];',./\\`. Specify your
 #: preference as a string of characters.
 
-# confirm_os_window_close -1
+confirm_os_window_close 0
 
 #: Ask for confirmation when closing an OS window or a tab with at
 #: least this number of kitty windows in it by window manager (e.g.
@@ -2644,7 +2644,7 @@ i#: Performance tuning {{{
 #: }}}
 
 # BEGIN_KITTY_FONTS
-font_family      family='Hurmit Nerd Font' postscript_name=HurmitNF-Regular
+font_family      family="FiraCode Nerd Font"
 bold_font        auto
 italic_font      auto
 bold_italic_font auto
