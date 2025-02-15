@@ -10,6 +10,7 @@ main() {
   swww img "$selected_wallpaper" --transition-type any --transition-fps 60 --transition-duration .5
   wal -i "$selected_wallpaper" -n --cols16
   cp ~/.cache/wal/obsidian.css ~/Appunti/.obsidian/snippets
+  ~/Appunti/.obsidian/pywal-obsidianmd.sh "/home/pietro/Appunti"
   swaync-client --reload-css
   ~/.config/waybar/refresh.sh
   cat ~/.cache/wal/colors-kitty.conf >~/.config/kitty/current-theme.conf
