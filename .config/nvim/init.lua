@@ -14,6 +14,8 @@ vim.opt.rtp:prepend(lazypath)
 vim.cmd("set number")
 require("vim-options")
 require("lazy").setup("plugins")
+require("mason").setup()
+require("mason-lspconfig").setup()
 vim.opt.termguicolors = true
 
 local harpoon = require("harpoon")
