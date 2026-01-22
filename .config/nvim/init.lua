@@ -10,6 +10,7 @@ vim.o.ignorecase = true
 vim.o.tabstop = 2
 vim.o.swapfile = false
 vim.o.winborder = "rounded"
+vim.opt.guicursor = "n-v-c-i:block"
 vim.g.mapleader = " "
 
 vim.keymap.set('n', '<leader>o', ':update<CR> :source<CR>')
