@@ -1,0 +1,40 @@
+[general]
+live_config_reload = true
+
+[font]
+normal = { family = "Iosevka Nerd Font Mono", style = "Regular" }
+bold = { family = "Iosevka Nerd Font Mono", style = "Bold" }
+italic = { family = "Iosevka Nerd Font Mono", style = "Italic" }
+size = 11.0
+
+[colors.primary]
+background = "#0d0d0d"
+foreground = "#e0e0e0"
+
+[colors.normal]
+black   = "#1c1c1c"
+red     = "#ff8080"
+green   = "#80ff80"
+yellow  = "#ffff80"
+blue    = "#80a0ff"
+magenta = "#ff80ff"
+cyan    = "#80ffff"
+white   = "#e8e8e8"
+
+[colors.bright]
+black   = "#555555"
+red     = "#ff5454"
+green   = "#54ff54"
+yellow  = "#ffff54"
+blue    = "#5454ff"
+magenta = "#ff54ff"
+cyan    = "#54ffff"
+white   = "#ffffff"
+
+[colors.cursor]
+text = "#0d0d0d"
+cursor = "#ffffff"
+
+[colors.selection]
+text = "CellBackground"
+background = "CellForeground"
