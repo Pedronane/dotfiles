@@ -13,7 +13,6 @@ exec --no-startup-id dex --autostart --environment i3
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
 # Use pactl to adjust volume in PulseAudio.
@@ -30,11 +29,17 @@ floating_modifier $mod
 # or left-clicking anywhere into the window while holding the floating modifier.
 tiling_drag modifier titlebar
 
+# Apps
+set $terminal "alacritty"
+set $browser "zen-browser"
+set $notes "obsidian"
+
 # Start terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec $terminal
 bindsym $mod+d exec ~/.config/scripts/dmenu-run.sh
-bindsym $mod+b exec zen-browser
-bindsym $mod+Shift+o exec obsidian
+bindsym $mod+b exec $browser
+bindsym $mod+Shift+b exec ~/.config/polybar/launch.sh
+bindsym $mod+Shift+o exec $notes
 bindsym $mod+q kill
 
 # change focus
